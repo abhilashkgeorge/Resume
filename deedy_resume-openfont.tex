@@ -1,0 +1,249 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{}{Abhilash Knox George}{ \urlstyle{same}\href{https://www.abhilashkgeorge.com}{www.abhilashkgeorge.com} | \href{https://www.linkedin.com/in/abhilashkgeorge}{LinkedIn} | \href{mailto:abhilashkgeorge@gmail.com}{user.abhilash@gmail.com} | +91 7624842110}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{KVG College of Engineering}
+\descript{B.E, Computer Science}
+\location{Feb 2021 | Sullia}
+GPA: 7.8
+\sectionsep
+
+\subsection{St. Aloysius P U College}
+\descript{Pre University, Electronics And Communication}
+\location{Apr 2017 | Mangalore}
+GPA: 8.0
+\sectionsep
+
+\subsection{Indraprastha Vidyalaya}
+\descript{High School}
+\location{Mar 2015 | Uppinangady}
+GPA: 8.9
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+LinkedIn://  \href{https://www.linkedin.com/in/abhilashkgeorge}{\bf abhilashknoxgeorge} \\
+Website://  \href{https://www.abhilashkgeorge.com}{\bf www.abhilashkgeorge.com} \\
+GitHub:// \href{https://github.com/abhilashkgeorge}{\bf abhilashkgeorge} \\
+Twitter:// \href{https://twitter.com/AbsKgeorge}{\bf AbhilashKGeorge} \\
+Replit:// \href{https://replit.com/@abhilashkgeorge}{\bf abhilashkgeorge} \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\textbullet{} Swift (SwiftUI, UIKit) \textbullet{} Python \textbullet{} Java \\
+\textbullet{} JavaScript \textbullet{} TypeScript \textbullet{} C \textbullet{} C++ \\
+\textbullet{} Assembly \textbullet{} Angular \textbullet{} Ionic \textbullet{} Cordova \\
+\textbullet{} HTML \textbullet{} CSS \\
+\sectionsep
+
+\subsection{Tools}
+\textbullet{} Git \textbullet{} XCode \textbullet{} Android Studio \\
+\textbullet{} NodeJS \textbullet{} MongoDB \textbullet{} SQL \\
+\textbullet{} REST API \textbullet{} Ionic Hybrid Development \\
+\textbullet{} Adobe Creative Cloud \textbullet{} moodle \\
+\textbullet{}  Unix/Linux system administration \\
+\sectionsep
+
+\subsection{Architectural Patterns}
+\textbullet{} MVVM  \textbullet{} MVC \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+\textbullet{} Unix Tools and Scripting \\
+\textbullet{} Operating Systems \\
+\textbullet{} Advanced Machine Learning \\
+\textbullet{} Computer Graphics + Practicum \\
+\textbullet{} Artificial Intelligence + Practicum \\
+\textbullet{} Cloud Computing \\
+\textbullet{} Defending Computer Networks \\
+\textbullet{} Automata, Computability, and Complexity \\
+\sectionsep
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Robosoft Technology Pvt Ltd}
+\descript{| iOS Developer }
+\location{Aug 2021 - Present | Karnataka, India}
+\sectionsep
+\begin{tightemize}
+\item Presently working on a project for \location{Tanishq iOS App} using Swift and UIKit.  \href{https://apps.apple.com/in/app/tanishq-a-tata-product/id1494086207}{\bf {\footnotesize \textit{\textbf{(AppStore Link) }}}}
+\item Worked on a team for a  customer engagement application named \location{Capitastar} using Swift and UIKit. \href{https://apps.apple.com/in/app/capitastar-work-india/id1565264581}{\bf {\footnotesize \textit{\textbf{(AppStore Link) }}}}
+\item Led a team of 52 as a part of Technical Intern Training Program.
+\item Worked as a team for \location{World of Titan App} using version control and software like Jira, GitHub and SourceTree.
+\href{https://apps.apple.com/in/app/titan-world/id1351637761}{\bf {\footnotesize \textit{\textbf{(Link) }}}}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Yesen Energia Private Limited}
+\descript{| Website/Application Developer [Freelancing] }
+\location{Jun 2020 - Aug 2021 | Kerala, India}
+\begin{tightemize}
+\item Developed and published a digital learning application "goscore App" on both Play Store and App Store using Ionic framework and Moodle. \href{https://apps.apple.com/in/app/goscore-app/id1608910579?uo=2}{\bf {\footnotesize \textit{\textbf{(AppStore Link) }}}}
+\item Created an E-commerce site "www.goscoreweb.com" for buying courses and launched an E-learning website "class.goscoreweb.com" for students to access the bought courses.  \href{https://class.goscoreweb.com/}{\bf {\footnotesize \textit{\textbf{(LMS Link) }}}}
+\item Hosted and maintained the server associated with the apps and websites.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\subsection{Haldirams's LMS} 
+ \textbullet{} Developed and published Android and iOS app for Haldiram. \href{https://play.google.com/store/apps/details?id=com.abhilashkgeorge.haldiram&pli=1}{\bf {\footnotesize \textit{\textbf{(Playstore Link) }}}} \\
+ \location{Technology: \textbullet{} Ionic Framework \textbullet{} Cordova
+ \textbullet{} JavaScript \textbullet{} Angular \textbullet{} HTML+ CSS } 
+ \sectionsep
+
+\subsection{EduSkills}
+\textbullet{} Developing, publishing, and maintaining Web, Android and iOS apps. \href{https://play.google.com/store/apps/details?id=com.abhilashkgeorge.eduskills}{\bf {\footnotesize \textit{\textbf{(PlayStore Link) }}}} \\
+ \location{Technology: \textbullet{} Cordova \textbullet{} Node
+ \textbullet{} JavaScript \textbullet{} Postman \textbullet{} Moodle Development } 
+\sectionsep
+
+\subsection{Custom Android OS for Students}
+\textbullet{} Developed features and functionalities that enhance the student experience and productivity and are tailored to the needs of students. \\
+ \location{Technology: \textbullet{} Java  \textbullet{} Bash Scripting  \textbullet{} Makefiles  \textbullet{} ADB  }
+\sectionsep
+
+\subsection{DBMS Project - Clinical Management System}
+\textbullet{} Explored the data management system followed in clinics. \\
+ \location{Technology: \textbullet{} MYSQL  \textbullet{} Java
+ \textbullet{} Apache Tomcat  } 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     INTERNSHIPS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Internships}
+
+\runsubsection{Robosoft Technology Pvt Ltd}:
+\location{12 Months} 
+\textbullet{} iOS app development \textbullet{} JS \textbullet{} TS \textbullet{} NodeJS \textbullet{} MongoDB. \\
+\sectionsep
+\runsubsection{Kaggle}:
+\location{2 Months} 
+Internship on "PYTHON COMPLETE COURSE". \\
+\sectionsep
+\runsubsection{Android App Development Internship}:
+\location{6 Months} 
+Native Android App Development using Java. \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications}
+
+\textbullet{} Intermediate Machine Learning from Kaggle \\
+\textbullet{} Python Certification from Google \\
+\textbullet{} Cyber Security Certification using Kali Linux \\
+\sectionsep
+
+\end{minipage} 
+\end{document}
+
